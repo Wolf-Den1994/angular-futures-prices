@@ -1,0 +1,19 @@
+<div class="future">
+  <h2>{{ future.title }}</h2>
+  <p>{{ future.text }}</p>
+
+  <div class="future-content">
+    <input type="text" placeholder="Write new price" #myPrice (input)="inputPriceHandle(myPrice.value)" [value]="future.newPrice">
+    <input type="datetime-local" placeholder="Write time" #myTime (input)="inputTimeHandle(myTime.value)" [value]="future.newTime">
+    <button (click)="onSave()" class="future__save">Save price</button>
+  </div>
+  <div *ngIf="errorSave" class="future__error">
+    Oops, error! Write price and time correctly, please!
+  </div>
+
+  <button (click)="getMaxMin()" class="future-max">Get Max&Min for {{ future.title }}</button>
+  <div class="future-data">
+    <div *ngIf="maxPrice">Max: {{maxPrice}} | Time: {{maxTime}}</div>
+    <div *ngIf="minPrice">Min: {{minPrice}} | Time: {{minTime}}</div>
+  </div>
+</div>

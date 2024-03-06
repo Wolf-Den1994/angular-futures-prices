@@ -1,0 +1,19 @@
+.max-min {
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  p {
+    font-family: 'Courier New', Courier, monospace;
+  }
+}
+
+.max-min-alltime {
+  margin-top: 20px;
+  align-items: flex-end;
+  gap: 10px;
+}

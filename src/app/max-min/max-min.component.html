@@ -1,0 +1,28 @@
+<div class="max-min">
+  <div>
+    <p *ngIf="maxPrice5min">Max between now and 5 min ago: <strong>{{maxPrice5min}}</strong></p>
+    <p *ngIf="minPrice5min">Min between now and 5 min ago: <strong>{{minPrice5min}}</strong></p>
+  </div>
+  <div>
+    <p *ngIf="maxPrice15min">Max between now and 15 min ago: <strong>{{maxPrice15min}}</strong></p>
+    <p *ngIf="minPrice15min">Min between now and 15 min ago: <strong>{{minPrice15min}}</strong></p>
+  </div>
+  <div>
+    <p *ngIf="maxPrice1h">Max between now and 1 hour ago: <strong>{{maxPrice1h}}</strong></p>
+    <p *ngIf="minPrice1h">Min between now and 1 hour ago: <strong>{{minPrice1h}}</strong></p>
+  </div>
+  <div>
+    <p *ngIf="maxPrice4h">Max between now and 4 hour ago: <strong>{{maxPrice4h}}</strong></p>
+    <p *ngIf="minPrice4h">Min between now and 4 hour ago: <strong>{{minPrice4h}}</strong></p>
+  </div>
+  <div>
+    <p *ngIf="maxPrice1d">Max between now and 1 day ago: <strong>{{maxPrice1d}}</strong></p>
+    <p *ngIf="minPrice1d">Min between now and 1 day ago: <strong>{{minPrice1d}}</strong></p>
+  </div>
+
+  <div class="max-min-alltime">
+    <button (click)="getMaxMinAllTime()">Get Max&Min for all futures and time</button>
+    <p *ngIf="maxPrice">Max: <strong>{{maxPrice}}</strong></p>
+    <p *ngIf="minPrice">Min: <strong>{{minPrice}}</strong></p>
+  </div>
+</div>
