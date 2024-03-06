@@ -1,5 +1,10 @@
 # TestingFutures
 
+### [Deploy](https://angular-futures-prices.netlify.app/)
+
+https://github.com/Wolf-Den1994/angular-futures-prices/assets/68957176/fa3f6e65-e0b3-4433-aee8-154b66ff3a73
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
 
 ## Development server
